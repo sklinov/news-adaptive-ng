@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="newsApp">
+<head>
+  <meta charset="utf-8">
+  <title>Новостное агентство</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+  <blackbar></blackbar>
+  <headbar></headbar>
+  <menubar></menubar>
+  <!--<articles></articles>-->
+  <div id="central-container">
+      <div class="fixed-container" id="flex-container">
+          <div id="column-left">
+            <news></news>
+          </div>
+      </div>
+  </div>
+
+  <!--<banners></banners>-->
+  <!--<extra></extra>-->
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="components/black-bar-component.js"></script>
+  <script src="components/head-component.js"></script>
+  <script src="components/menu-component.js"></script>
+  <script src="components/news-component.js"></script>
+
+
+</body>
+</html>
