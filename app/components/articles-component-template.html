@@ -1,0 +1,25 @@
+
+<div id="center-big" ng-repeat="mainarticle in $ctrl.articlesitem | limitTo: 1 :0 ">
+    <div class="news-item-props">
+        <a href="{{main.articleURL}}">/ {{mainarticle.section}}</a>
+    </div>
+    <h3>
+        {{mainarticle.text}}
+    </h3>
+    <div class="news-date">{{mainarticle.date}}</div>
+    <div class="news-time">{{mainarticle.time}}</div>
+</div>
+
+<div id="central-flex">
+
+    <div class="article-item" ng-repeat="article in $ctrl.articlesitem | limitTo: $ctrl.articlesitem.length-1 : 1">
+        <img src="img/{{article.imgname}}.png">
+        {{article.text}}
+        <div class="news-item-props">
+            <a href="{{article.sectionURL}}">/ {{article.section}}</a>
+            <div class="news-time">{{article.time}}</div>
+            <div class="news-comments-count">{{article.no_of_comments}}</div>
+        </div>
+    </div>
+
+</div>

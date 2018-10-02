@@ -1,10 +1,12 @@
-<div class="news-item">
+<h2>Новости дня</h2>
+<div class="news-item" ng-repeat="items in $ctrl.newsitem">
     <div class="news-item-text">
-        Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+        {{items.text}}
     </div>
     <div class="news-item-props">
-        <a href="#">/ ЧМ по футболу</a>
-        <div class="news-time">10:45</div>
-        <div class="news-comments-count">17</div>
+        <a href="#">/ {{items.section}}</a>
+        <div class="news-time">{{items.time}}</div>
+        <div class="news-comments-count">{{items.no_of_comments}}</div>
     </div>
 </div>
+<input type="button" name="all-news" value="Все новости" id="all-news-button">

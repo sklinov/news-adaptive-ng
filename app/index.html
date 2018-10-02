@@ -14,17 +14,27 @@
   <blackbar></blackbar>
   <headbar></headbar>
   <menubar></menubar>
-  <!--<articles></articles>-->
+
   <div id="central-container">
       <div class="fixed-container" id="flex-container">
           <div id="column-left">
             <news></news>
           </div>
+          <div id="column-center">
+            <articles></articles>
+          </div>
+          <aside>
+              <div id="column-right">
+                  <img src="img/banner-1.png">
+                  <img src="img/banner-2.png">
+              </div>
+          </aside>
       </div>
-  </div>
 
-  <!--<banners></banners>-->
-  <!--<extra></extra>-->
+
+  <extra></extra>
+  </div>
+  <foot></foot>
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
@@ -33,6 +43,9 @@
   <script src="components/head-component.js"></script>
   <script src="components/menu-component.js"></script>
   <script src="components/news-component.js"></script>
+  <script src="components/articles-component.js"></script>
+  <script src="components/extra-component.js"></script>
+  <script src="components/foot-component.js"></script>
 
 
 </body>

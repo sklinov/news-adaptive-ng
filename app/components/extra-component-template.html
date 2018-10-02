@@ -1,0 +1,29 @@
+<div class="fixed-container">
+    <div id="special-news">
+        <div id="special-left" ng-repeat="extra in $ctrl.extraitem | limitTo: 1 :0 ">
+            <div class="news-item-props">
+                <a href="{{extra.sectionURL}}">/ {{extra.section}}</a>
+            </div>
+            <h3>
+                {{extra.text}}
+            </h3>
+            <div class="news-date">{{extra.date}}</div>
+            <div class="news-time">{{extra.time}}</div>
+            <div class="additional-text">{{extra.additional}}</div>
+
+        </div>
+        <div id="special-right">
+            <h2>Самые читаемые новости</h2>
+            <div class="special-item" ng-repeat="extras in $ctrl.extraitem | limitTo: $ctrl.extraitem.length-1: 1">
+                {{extras.text}}
+                <div class="news-item-props">
+                    <a href="{{extras.sectionURL}}">/ {{extras.section}}</a>
+                    <div class="news-time">{{extras.time}}</div>
+                    <div class="news-comments-count">{{extras.no_of_comments}}</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

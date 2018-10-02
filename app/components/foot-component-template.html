@@ -1,0 +1,33 @@
+<footer>
+    <div class="fixed-container">
+        <nav id="footer-menu">
+
+                <div class="f-menu-item" ng-repeat="items in $ctrl.menuitem">
+                    <a href="{{items.url}}"> {{ items.label }} </a>
+
+                </div>
+        </nav>
+        <div id="about">
+            <img src="img/logo_white.png"><br>
+            <a href="#">Об агентстве</a><br>
+            <a href="#">Контакты</a><br>
+            <a href="#">Опубликовать новость</a><br>
+        </div>
+        <address>
+            <a href="https://vk.com"><img src="img/vk.png"></a>&nbsp;&nbsp;
+            <a href="https://facebook.com"><img src="img/fb.png"></a>&nbsp;&nbsp;
+            <a href="https://twitter.com"><img src="img/tw.png"></a>&nbsp;&nbsp;
+            <a href="https://instagram.com"><img src="img/inst.png"></a>
+            <div id="tel">
+                <a href="tel:+74959559595">+7(495)955-95-95</a>
+            </div>
+            <div id="email">
+                <a href="mailto:info@agency.ru">info@agency.ru</a>
+            </div>
+        </address>
+        <div id="copyright">
+            &copy; Новостное агентство, 2017-2018. Все права защищены.
+        </div>
+    </div>
+
+</footer>
