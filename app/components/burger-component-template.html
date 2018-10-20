@@ -1,0 +1,8 @@
+<div>
+    <img ng-src="img/{{icon}}.png" ng-init="icon='menu'" ng-click=" showMenu = !showMenu; hideBlackBar = !hideBlackBar">
+        <div ng-show="showMenu" class="mobile-menu">
+            <div class="mobile-menu-text" ng-repeat="items in $ctrl.menuitem">
+                <a href="{{items.url}}"> {{ items.label }} </a>
+            </div>
+        </div>
+</div>

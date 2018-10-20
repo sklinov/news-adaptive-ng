@@ -1,9 +1,10 @@
 <div id="menu-container">
+    <!--<input type="image" src="img/menu.png" id="menu-burger" ng-click="MenuBurger()">-->
     <div class="fixed-container">
-        <ul>
-            <li class="menu-item" ng-repeat="items in $ctrl.menuitem"> <a href="{{items.url}}"> {{ items.label }} </a>
-                <div class="menu-divider">   /   </div>
-            </li>
-        </ul>
+
+            <div class="menu-item" ng-repeat="items in $ctrl.menuitem">
+                <a href="{{items.url}}"> {{ items.label }} </a>
+                <!--<div class="menu-divider">   /   </div>-->
+            </div>
     </div>
 </div>

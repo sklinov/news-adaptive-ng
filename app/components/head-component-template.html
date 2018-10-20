@@ -1,14 +1,19 @@
 <header>
     <div class="fixed-container">
+        <burger id="menu-burger" ></burger>
         <img id="logo" src="img/logo.png">
         <div id="header-text">
             <a href="#">Москва</a>
-
         </div>
-        <div id="currency">
-            {{$ctrl.euro_rate}} {{$ctrl.dollar_rate}}
+        <div id="currency" >
+            {{euro_rate}} {{dollar_rate}}
         </div>
         <div id="header-weather">+22&deg;С</div>
-        <input type="text" name="search" id="search" placeholder="Поиск по сайту">
+        <input type="text" id="search">
+    </div>
+    <div class="fixed-container" id="time-weather-mobile">
+        <div class="date-mobile">19 июня, Вт</div>
+        <div class="news-time">13:30</div>
+        <div class="header-weather">+22&deg;С</div>
     </div>
 </header>
